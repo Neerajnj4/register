@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+  <style>
+    *{
+         margin:0;
+         padding:0;
+         font-family:Helvetica, Arial, sans-serif;
+      }
+
+    body {
+        background-color:white;
+      }
+
+    .main {
+
+       position:absolute;
+       top:18%;
+       left:52%;
+       translate:(50%,50%);
+       font-size:20px;
+       margin:auto;
+       width:400px;
+       height:360px;
+       border-radius:10px;
+       background-color:white;
+       overflow:visible;
+       box-shadow: 0px 5px 8px 3px #aaa;
+
+     }
+     .main:hover {
+       border:5px solid white;
+
+     }
+     .user input {
+           font-size:15px;
+           padding:15px 20px;
+           width:80%;
+           position:center;
+           border:0;
+           border-radius:5px;
+           outline:1px solid;
+           margin-top:18px;
+           margin-left:19px;
+
+        }
+
+      .user input:hover {
+
+           outline:1px solid blue;
+
+      }
+      .main button {
+
+           text-align:center;
+           text-size:20px;
+           font-weight:bold;
+           padding:15px 20px;
+           margin-top:16px;
+           margin-left:19px;
+           width:90%;
+           border:none;
+           line-height:20px;
+           border-radius:5px;
+           background-color: #008CBA;
+           color:white;
+           cursor:pointer;
+
+           }
+
+         .button-forgot {
+           text-decoration:hidden;
+           color:#fff;
+           font-size:13px;
+           text-align:center;
+           margin-top:15px;
+           margin-left:-10px;
+
+
+
+           }
+
+         .facebook {
+             float:left;
+             margin-top:200px;
+             margin-left:270px;
+
+          }
+
+         .facebook h1  {
+
+            color:#24a0ed;
+            font-size:60px;
+
+           }
+
+           .facebook h4 {
+             margin-top:12px;
+             font-size:20px;
+
+             }
+
+           .button-forgot button {
+
+           text-align:center;
+           font-size:13px;
+           font-weight:bold;
+           text-transform:uppercase;
+           padding:15px 20px;
+           margin-left:10px;
+           margin-top:50px;
+           width:55%;
+           border:0px;
+           line-height:20px;
+           border-radius:5px;
+           background-color:#32CD32;
+
+           }
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+ <div class="facebook">
+    <h1>facebook</h1>
+    <h4>Facebook helps you connect and share <br> with the people in your life.</h4>
+ </div>
+   <div class="main">
+        <div class="user">
+             <label for ="username"></label>
+             <input  type="text" name = "fullname" placeholder ="Email address or phone number"><br>
+             <label for ="password"></label>
+             <input  type="password" name = "last name" placeholder ="password"><br>
+        </div>
+
+        <p></p>
+            <a href="own portfolio.html"><button type="submit">Login</button></a>
+
+        <div class="button-forgot">
+             <a href="#" class="btn">Forgotten password?</a>
+            <p></p>
+            <a href="facebook signin.html"><button type="submit">Create New Account</button></a>
+        </div>
+
+   </div>
+</body>
+</html>

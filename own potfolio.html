@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personal website</title>
+    <script src="https://kit.fontawesome.com/c4fd8478a5.js" crossorigin="anonymous"></script>
+    <style>
+    *{
+         margin:0;
+         padding:0;
+         font-family:century gothic;
+    }
+    header{
+         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../psy3.jpg);
+         height:800px;
+         background-size:1650px 750px;
+         background-repeat:no repeat;
+         background-size:cover;
+         background-position:center;
+      }
+    .main {
+       margin-right:50px;
+       }
+
+    ul {
+         float:right;
+         list-style-type:none;
+         margin-top:30px;
+      }
+
+    ul li {
+        display:inline-block;
+      }
+
+    ul li a {
+         text-decoration:none;
+         color:#fff;
+         padding:5px 20px;
+         border:1px solid transparent;
+         transition:0.6s ease;
+      }
+    ul li a:hover {
+        background-color:#fff;
+         color:rgba(150,0,0);
+      }
+
+    ul li.active a {
+         background-color:#fff;
+         color:rgba(0,0,0);
+     }
+
+    .name {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      border-radius:0px;
+      width:300px;
+      float:left;
+      margin-left:50px;
+
+    }
+    .name h1 {
+       color:black;
+       font-size:35px;
+       margin-top:-10px;
+       margin-left:20px;
+       padding:0px;
+
+    }
+    .name h2 {
+       color:red;
+       font-size:16px;
+       margin-left:-5px;
+       margin-top:-5px;
+       padding:5px;
+
+    }
+
+<!--    .name h3 {-->
+<!--       color:red;-->
+<!--       font-size:14px;-->
+<!--       padding-left:5px;-->
+<!--       padding-right:5px;-->
+<!--       margin-top:20px;-->
+<!--       margin-left:-30px;-->
+<!--       margin-right:30px;-->
+<!--     }-->
+
+    .name h4 {
+
+     font-size:15px;
+     font-family:cursive;
+     color:white;
+     text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+     text-decoration:line-through;
+     margin-top:170px;
+     margin-left:-75px;
+      }
+
+
+
+
+    .fa {
+         padding:10px;
+         font-size: 10px;
+         width: 10px;
+         text-align: center;
+         margin-top:310px;
+         display:inline-block;
+         margin-right:0px;
+         margin-left:50px;
+         text-decoration: none;
+
+
+
+
+     }
+
+    .fa:hover {
+    opacity: 0.7;
+     }
+
+    .fa-facebook {
+        background: #3B5998;
+          color: white;
+      }
+
+    .fa-twitter {
+  background: #55ACEE;
+  color: white;
+    }
+
+    .fa-youtube {
+  background: #bb0000;
+  color: white;
+     }
+
+   .fa-instagram {
+  background: #125688;
+  color: white;
+     }
+
+   .fa-linkedin {
+  background: #007bb5;
+  color: white;
+    }
+    .mainbox{
+     display:inline-block;
+      position:absolute;
+           background-color:#ffff;
+           border:20px;
+           border-style:transparent;
+           border-radius:20px;
+           width:450px;
+           height:350px;
+           margin-left:690px;
+           margin-top:250px;
+           outline:hidden;
+
+
+    }
+   img {
+    border-radius:20px 0px 0px 20px;
+    width:350px;
+    height:350px;
+    float:left;
+    margin-top:-345px;
+    margin-left:-335px;
+    border:1px transparent #ddd;
+    padding:5px;
+    }
+
+    img:hover {
+           box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+           transform: scaleX(-1);
+
+     }
+
+    .button {
+      position:absolute;
+      top:55%;
+      left:52%;
+      transform:translate(-50%,-50%);
+      transition:0.6s ease;
+      }
+
+    .btn {
+      border:1px dotted black;
+      padding:10px 15px;
+      color:red;
+      text-decoration:none;
+     }
+
+    .btn:hover {
+      background-color:rgba(0, 140, 186, 0.5);
+      color:white;
+      }
+
+    .about {
+       width:100%;
+       padding:100px 0px ;
+       background-color:white;
+       height:100%;
+       }
+    .about img {
+       width:420px;
+       height:400px;
+       margin-left:50px;
+       margin-top:80px;
+       }
+
+    .about-text{
+       width:550px;
+
+       }
+
+    .about-me {
+       align-items:center;
+       display:flex;
+       justify-content:space-around;
+       width:1130px;
+       max-width:95%;
+       margin:0 auto
+       }
+     .about-text h2 {
+        color:black;
+        font-size:50px;
+        margin-bottom:15px;
+
+      }
+     .about-text h4 {
+         color:red;
+        font-size:30px;
+        margin-bottom:15px;
+        letter-spacing:2px;
+     }
+     .about-text h5 {
+          color:#fcfc;
+        font-size:15px;
+        margin-bottom:55px;
+        line-height:28px;
+        letter-spacing:1px;
+
+     }
+     .about-text h6 {
+           color:green;
+        font-size:15px;
+        margin-bottom:15px;
+        margin-left:170px;
+        }
+      button {
+        background-color:#f9004d;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        border-radius:30px;
+        border:2px solid transparent;
+        transition:0.5s ease;
+        padding:13px 30px;
+        margin-left:170px;
+        }
+        button:hover {
+          background-color:pink;
+          border:2px solid #f9004d;
+          cursor:pointer;
+          }
+
+
+    .services {
+         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../psy3.jpg);
+         height:800px;
+         background-size:1650px 750px;
+         background-repeat:no repeat:
+         background-size:cover;
+         background-position:center;
+
+      }
+    .title p {
+       text-align:center;
+       color:white;
+       font-size:60px;
+       margin-top:100px;
+       width:1500px;
+
+
+       }
+    .box {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:600px;
+      }
+     .card {
+        height:300px;
+        width:330px;
+        margin:15px;
+        padding:20px 35px;
+        background-color:white;
+        overline:hidden;
+        text-align:center;
+        position:relative;
+        border-radius:5px;
+        }
+     .card i {
+        font-size:50px;
+        display:block;
+        text-align:center;
+        margin:20px 0px;
+        color:#f9004d;
+        }
+     .card h5 {
+        font-size:20px;
+        color:#f9004d;
+        margin-bottom:15px
+        }
+     .para p {
+         font-size:16px;
+         color:#fcfc;
+         line-height:27px;
+         margin-bottom:25px;
+
+         }
+     .button-new {
+        background-color:#f9004d;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        border-radius:30px;
+        border:2px solid transparent;
+        transition:0.5s ease;
+        padding:8px 20px;
+        margin-left:10px;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<header>
+
+      <div class = "main">
+          <ul>
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">Contact Us</a></li>
+           </ul>
+      </div>
+    <div class="mainbox">
+
+
+          <div class="name">
+              <h1> Neeraj R.N</h1>
+              <h2>Web Developer-Web Designer</h2>
+<!--              <h3>Myself Neeraj R N . I have completed my B.tech in Computer Science,from Baselios Mathews II College Of Engineering. Iam a Web Developer & Web Designer, specializing in HTML5,  MySQL, database design, and front-end development.</h3>-->
+              <h4>----------------follow me-----------------</h4>
+          </div>
+
+          <div class="socialmedia">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-youtube"></i>
+              <i class="fa fa-linkedin"></i>
+          </div>
+
+          <div class="pic">
+              <img src="pic1.JPG">
+<!--         <div class="overlay">-->
+<!--           <div class="text">neeraj r n</div>-->
+          </div>
+
+          <div class="button">
+              <a href="#" class="btn">visit us to know more</a>
+          </div>
+    </div>
+    </header>
+
+    <section class="about">
+        <div class="about-me">
+            <img src="pic1.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h4>Web Developer-Web Designer</h4>
+                <h5>Myself Neeraj R N . I have completed my B.tech in Computer Science,from Baselios Mathews II College Of Engineering. Iam a Web Developer & Web Designer, specializing in HTML5,  MySQL, database design, and front-end development.</h5>
+<!--                #js start-->
+                <h6 id="demo">Download My cv.</h6>
+                <p></p>
+                   <a href="cv neeraj 2.pdf"><button type="button" onclick='document.getElementById("demo").innerHTML = "Downloading..."'>click me</button></a>
+
+<!--                #js end-->
+
+            </div>
+        </div>
+
+    </section>
+    <div class="services">
+       <div class="title">
+           <p>Our services</p>
+       </div>
+
+
+    <div class="box">
+       <div class="card">
+           <i class="fa-solid fa-bars"></i>
+           <h5>Web development</h5>
+         <div class="para">
+             <p>every website should be developed with two primary goals,firstly ,it needs to work accross all devices. secondaly it needs as fast to possible.</p>
+             <a class="button-new" href="#">Read more</a>
+
+         </div>
+       </div>
+
+        <div class="card">
+            <i class="fa-thin fa-user"></i>
+           <h5>Web development</h5>
+          <div class="para">
+             <p>every website should be developed with two primary goals,firstly ,it needs to work accross all devices. secondaly it needs as fast to possible.</p>
+
+             <a class="button-new" href="#">Read more</a>
+
+          </div>
+       </div>
+
+        <div class="card">
+            <i class="fa-sharp fa-solid fa-bell"></i>
+           <h5>Web development</h5>
+          <div class="para">
+             <p>every website should be developed with two primary goals,firstly ,it needs to work accross all devices. secondaly it needs as fast to possible.</p>
+
+             <a class="button-new" href="#">Read more</a>
+         </div>
+       </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

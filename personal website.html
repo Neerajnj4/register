@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animated portfolio</title>
+<style>
+    .*{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+         font-family:century gothic;
+    }
+    body {
+      background-color:#1f242d;
+    }
+   .header {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:100px;
+      align-items:center;
+      justify-content:space-between;
+      width:100%;
+      padding:20px 10px;
+      display:flex;
+
+   }
+   .logo {
+
+         font-size: 25px;
+         font-weight: 600px;
+         color:#fff;
+         cursor:default;
+         text-decoration: none;
+   }
+   .navbar a {
+         font-size: 18px;
+         font-weight: 500px;
+         color:#fff;
+         text-decoration: none;
+         margin-left:35px;
+         transition:0.3s ;
+
+
+   }
+   .navbar a:hover ,
+   .navbar a.active {
+
+       color:#0ef;
+   }
+
+
+</style>
+</head>
+<body>
+ <header class="header">
+   <a href="#" class="logo">portfolio.</a>
+   <nav class = "navbar">
+
+               <a href="#" class="active">Home</a>
+               <a href="#">About Us</a>
+               <a href="#">Services</a>
+               <a href="#">Gallery</a>
+               <a href="#">Contact Us</a>
+
+      </nav>
+ </header>
+</body>
+</html>
